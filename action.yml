@@ -10,10 +10,10 @@ branding:
   icon: "git-branch"
 inputs:
   email:
-    description: "Email address"
+    description: Email address
     required: true
     default: "{{ github.actor }}@localhost"
   name:
-    description: "Name"
+    description: Name
     required: true
     default: "{{ github.actor }}"
