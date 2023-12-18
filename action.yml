@@ -1,0 +1,19 @@
+name: "PodcastGenerator"
+author: "TharinduShakya"
+description: "This action will generate a podcast feed from a YML file"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  color: "blue"
+  icon: "git-branch"
+inputs:
+  email:
+    description: "Email address"
+    required: true
+    default: "{{ github.actor }}@localhost"
+  name:
+    description: "Name"
+    required: true
+    default: "{{ github.actor }}"
